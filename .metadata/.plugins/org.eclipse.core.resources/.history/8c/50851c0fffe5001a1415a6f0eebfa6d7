@@ -1,0 +1,30 @@
+package com.marketplace.rest.webservices.restfulwebservices.basic.auth;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class AuthenticationBean {
+
+private String message;
+	
+	public AuthenticationBean(String message) {
+		this.message=message;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	
+}
+  
+  
+
+
+  
+

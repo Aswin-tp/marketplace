@@ -1,0 +1,136 @@
+.footer {
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 40px;
+background-color:#222;
+left:0;
+right:0;
+display: inline-block;
+}
+
+.product {
+  width: 190px;
+  height: 190px;
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.product-container {
+  padding: 10px;
+}
+
+.product-view {
+  width: 50%;
+  float: left;
+  padding: 5px;
+} 
+
+.product-image {
+  width: 100px;
+  height: 100px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  left:0;
+right:0;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  color: blue;
+}
+p{
+
+  color: #000080;
+
+}
+h1{
+  color: #000080;
+}
+
+.content-wrap {
+  position: relative;
+  min-height: 100px;
+}
+
+.container{
+  padding-bottom:5px;
+}
+.pagination {
+  position: absolute;
+  bottom : 25px;
+}
+.pagination > li {
+ 
+  display: inline-block;
+  padding-left: 0;
+  
+}
+.pagination > li {
+  list-style: none;
+  border: 0.9px solid;
+}
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  text-decoration: none;
+  color: #2c689c;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-left: -1px;
+}
+
+.pagination>li.active>a {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.pagination > li > a:hover {
+  background-color:  #218838;
+  color: white;
+}
+
+

@@ -1,0 +1,60 @@
+package com.marketplace.rest.webservices.restfulwebservices.marketplace;
+
+import java.net.URI;
+import java.util.*;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+import org.springframework.http.HttpStatus;
+
+
+@RestController
+@CrossOrigin(origins="http://localhost:4200")
+public class ProductController {
+	
+	@Autowired
+	ProductRepository productRepository;
+	
+	@GetMapping(path="products/{username}")
+	public List<Product> getProducts(@PathVariable String username) {
+		return productRepository.findByUsername(username);
+	}
+	
+	@GetMapping(path="products/{username}/{id}")
+	public Product getProductById(@PathVariable String username, @PathVariable long id) {
+		return productRepository.findById(id).get();
+	}
+	
+	@DeleteMapping(path="products/{username}/{id}")
+	public ResponseEntity<Void> deleteProduct(@PathVariable String username, @PathVariable long id) {
+		productRepository.deleteById(id);
+		return ResponseEntity.ok().build();
+	}
+	
+	@PutMapping(path="products/{username}/{id}")
+	public ResponseEntity<Product> addProduct(@PathVariable String username, @PathVariable long id, @RequestBody Product product) {
+		Product updatedProduct = productRepository.save(product);
+		return new ResponseEntity<Product>(product, HttpStatus.OK);
+		//return null;
+	}
+	
+	@PostMapping(path="products/{username}")
+	public ResponseEntity<Void> updateProduct(@PathVariable String username, @RequestBody Product product) {
+
+		Product createdProduct = productRepository.save(product);
+		URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
+				.path("/{id}").buildAndExpand(createdProduct.getId()).toUri();
+		return ResponseEntity.created(uri).build();
+	}
+	
+
+}

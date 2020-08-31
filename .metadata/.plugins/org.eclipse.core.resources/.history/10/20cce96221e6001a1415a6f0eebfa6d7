@@ -1,0 +1,9 @@
+package com.marketplace.rest.webservices.restfulwebservices;
+
+public class BcryptEncoderService {
+	public void EncodeString() {
+		BcryptEncoderService encoder = new BcryptEncoderService();
+		String encodedString = encoder.encode();
+
+	}
+	}

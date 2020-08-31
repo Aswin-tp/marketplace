@@ -1,0 +1,18 @@
+package com.marketplace.rest.webservices.restfulwebservices.marketplace;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+public class UserDetails {
+
+	 @Id
+	  @GeneratedValue
+	  private Long id;
+	  
+	  private String username;
+	  private String firstName;
+	  private String lastName;
+	  private String phone;
+	  private String email;
+	
+}

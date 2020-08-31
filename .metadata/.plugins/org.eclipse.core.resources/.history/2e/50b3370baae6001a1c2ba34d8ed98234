@@ -1,0 +1,5 @@
+package com.marketplace.rest.webservices.restfulwebservices.jwt;
+
+public class JwtUserDetailsRepository {
+
+}

@@ -1,0 +1,20 @@
+insert into product(product_name, id, price, status, username)
+values('Product1', 1001, 100, true, 'aswin');
+
+insert into product(product_name, id, price, status, username)
+values('Product2', 1002, 200, true, 'aswin');
+
+insert into product(product_name, id, price, status, username)
+values('Product3', 1003, 300, true, 'aswin');
+
+insert into product(product_name, id, price, status, username)
+values('Product4', 1004, 100, true, 'aswintp');
+
+insert into product(product_name, id, price, status, username)
+values('Product5', 1005, 200, true, 'aswintp');
+
+insert into product(product_name, id, price, status, username)
+values('Product6', 1006, 300, true, 'aswintp');
+
+insert into jwt_user_details(id, password, username)
+values(1, tptp, 'aswintp');

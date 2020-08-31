@@ -1,0 +1,11 @@
+package com.marketplace.rest.webservices.restfulwebservices;
+
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+public class BcryptEncoderService {
+	public void EncodeString(String string) {
+		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+		String encodedString = encoder.encode(string);
+
+	}
+	}

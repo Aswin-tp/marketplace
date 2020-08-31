@@ -1,0 +1,30 @@
+insert into product(product_name, id, price, status, username, description)
+values('Product1', 1001, 100, true, 'aswin', 'this is the product description');
+
+insert into product(product_name, id, price, status, username, description)
+values('Product2', 1002, 200, true, 'aswin', 'this is the product description');
+
+insert into product(product_name, id, price, status, username, description)
+values('Product3', 1003, 300, true, 'aswin', 'this is the product description');
+
+insert into product(product_name, id, price, status, username, description)
+values('Product4', 1004, 100, true, 'aswintp', 'this is the product description');
+
+insert into product(product_name, id, price, status, username, description)
+values('Product5', 1005, 200, true, 'aswintp', 'this is the product description');
+
+insert into product(product_name, id, price, status, username, description)
+values('Product6', 1006, 300, true, 'aswintp', 'this is the product description');
+
+insert into jwt_user_details(id, password, username, first_Name, last_Name, phone, email)
+values(1001, '$2a$10$kkH/LSGdGK8ISqiLXk3cFeIjbEzXpjOi8Ia2yZDzFNJhIAMGCcjvm', 'aswin','aswin', 'tp', '123456', 'aswin@tp.com');
+
+insert into jwt_user_details(id, password, username, first_Name, last_Name, phone, email)
+values(1002, '$2a$10$kkH/LSGdGK8ISqiLXk3cFeIjbEzXpjOi8Ia2yZDzFNJhIAMGCcjvm', 'aswintp', 'aswintp', 'tp', '12345678', 'aswintp@tp.com');
+
+
+insert into user_detail(username, first_Name, last_Name, phone, email)
+values('aswin','aswin', 'tp', '123456', 'aswin@tp.com');
+
+insert into user_detail(username, first_Name, last_Name, phone, email)
+values('aswintp','aswin', 'tp', '12345678', 'aswintp@tp.com');

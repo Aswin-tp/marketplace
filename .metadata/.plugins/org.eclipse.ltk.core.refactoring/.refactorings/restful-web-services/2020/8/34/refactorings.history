@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;restful-web-services/src/main/resources/products.sql&apos; to &apos;data.sql&apos;" description="Rename resource &apos;products.sql&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/products.sql" name="data.sql" stamp="1598085930640" updateReferences="true"/>
+</session>

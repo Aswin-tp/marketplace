@@ -1,0 +1,5 @@
+package com.marketplace.rest.webservices.restfulwebservices.basic.auth;
+
+public class SpringSecurityConfigurationBasicAuth {
+
+}
